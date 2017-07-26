@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/back"
+    tools:context="com.techease.danyal.bmicalculator.HeightActivity">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"
+        android:paddingBottom="100dp"
+        android:layout_marginTop="57dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/height"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/getHeight"
+        android:inputType="number"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/getHeight"
+        android:layout_alignRight="@+id/getHeight"
+        android:layout_alignEnd="@+id/getHeight" />
+
+
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:background="@drawable/four"
+
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:id="@+id/next4"
+        android:background="@drawable/next"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heightSpinner"
+        android:entries="@array/heightSpinnerString"
+        android:layout_alignBottom="@+id/getHeight"
+        android:layout_toRightOf="@+id/getHeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView6" />
+
+
+</RelativeLayout>

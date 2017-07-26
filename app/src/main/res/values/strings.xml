@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="weightSpinnerString">
+        <item>Pounds</item>
+        <item>Kilograms</item>
+
+</string-array>
+
+    <string-array name="heightSpinnerString">
+        <item>Inch</item>
+        <item>CM</item>
+    </string-array>
+</resources>

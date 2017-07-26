@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.techease.danyal.bmicalculator.WeightActivity">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"
+        android:paddingBottom="100dp"
+        android:layout_marginTop="57dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weight"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/getweight"
+        android:paddingLeft="60dp"
+        android:inputType="number"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/getweight"
+        android:layout_alignRight="@+id/getweight"
+        android:layout_alignEnd="@+id/getweight" />
+
+
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:background="@drawable/three"
+
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView3" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:id="@+id/next3"
+        android:background="@drawable/next"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weightspinner"
+        android:layout_toRightOf="@+id/getweight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/getweight"
+        android:layout_alignBottom="@+id/getweight" />
+
+</RelativeLayout>

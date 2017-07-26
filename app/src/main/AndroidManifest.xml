@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techease.danyal.bmicalculator"
+    android:versionCode="300"
+    android:versionName="3.0.0">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".StartScreen" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEND" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AgeActivity" />
+        <activity android:name=".WeightActivity" />
+        <activity android:name=".HeightActivity" />
+        <activity android:name=".FourthActivity" />
+        <activity android:name=".ResultActivity"></activity>
+    </application>
+
+</manifest>
