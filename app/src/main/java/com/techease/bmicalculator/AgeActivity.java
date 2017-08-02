@@ -1,4 +1,4 @@
-package com.techease.danyal.bmicalculator;
+package com.techease.bmicalculator;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 public class AgeActivity extends AppCompatActivity {
     ImageButton next2;
     EditText getAge ;
-    ImageButton malebut , female;
+    ImageButton malebut , femalebut;
     boolean isPressed = false;
     String gender ;
 
@@ -22,32 +22,26 @@ public class AgeActivity extends AppCompatActivity {
         getAge = (EditText)findViewById(R.id.getage);
         next2 = (ImageButton) findViewById(R.id.next2);
         malebut = (ImageButton) findViewById(R.id.malebutton);
-        female = (ImageButton) findViewById(R.id.femalebutton);
+        femalebut = (ImageButton) findViewById(R.id.femalebutton);
 
         malebut.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                if(isPressed){
-                    malebut.setBackgroundResource(R.drawable.male);
-                    gender = "male" ;
-                }else {
-                    malebut.setBackgroundResource(R.drawable.male1);
-                }
-                isPressed =! isPressed;
+
+                malebut.setBackgroundResource(R.drawable.male);
+                femalebut.setBackgroundResource(R.drawable.female);
+
             }
         });
 
 
-        female.setOnClickListener(new View.OnClickListener(){
+        femalebut.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                if(isPressed){
-                    female.setBackgroundResource(R.drawable.female);
-                    gender = "female" ;
-                }else {
-                    female.setBackgroundResource(R.drawable.female1);
-                }
-                isPressed =! isPressed;
+
+                femalebut.setBackgroundResource(R.drawable.female1);
+                malebut.setBackgroundResource(R.drawable.male1);
+
             }
         });
 

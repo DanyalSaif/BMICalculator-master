@@ -1,4 +1,4 @@
-package com.techease.danyal.bmicalculator;
+package com.techease.bmicalculator;
 
 import android.content.Context;
 import android.view.LayoutInflater;

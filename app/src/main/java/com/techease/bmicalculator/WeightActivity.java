@@ -1,4 +1,4 @@
-package com.techease.danyal.bmicalculator;
+package com.techease.bmicalculator;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +32,7 @@ public class WeightActivity extends AppCompatActivity {
         next3 = (ImageButton) findViewById(R.id.next3);
         getWeight = (EditText) findViewById(R.id.getweight);
         weightSpinner = (Spinner) findViewById(R.id.weightspinner);
+        weightType = "KG" ;
 
 
         CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), weightSpinnerValue);
@@ -41,12 +42,11 @@ public class WeightActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-                if (i == 1) {
+                if (i == 0) {
                     weightType = "KG";
-                    Toast.makeText(WeightActivity.this, weightType, Toast.LENGTH_SHORT).show();
-                } else if (i == 2) {
+
+                } else if (i == 1) {
                     weightType = "Pounds";
-                    Toast.makeText(WeightActivity.this, weightType, Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -85,7 +85,6 @@ public class WeightActivity extends AppCompatActivity {
              public boolean validate() {
                  boolean valid = true;
                  String weight = getWeight.getText().toString();
-
 
                  if (weight.isEmpty()) {
                      getWeight.setError("Enter your weight ");

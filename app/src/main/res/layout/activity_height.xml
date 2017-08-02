@@ -32,6 +32,7 @@
         android:layout_height="40dp"
         android:id="@+id/getHeight"
         android:inputType="number"
+        android:gravity="center"
         android:layout_marginTop="44dp"
         android:layout_below="@+id/imageView5"
         android:layout_centerHorizontal="true" />
@@ -52,7 +53,6 @@
         android:layout_width="90dp"
         android:layout_height="25dp"
         android:background="@drawable/four"
-
         android:layout_marginBottom="34dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -73,7 +73,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/heightSpinner"
-        android:entries="@array/heightSpinnerString"
         android:layout_alignBottom="@+id/getHeight"
         android:layout_toRightOf="@+id/getHeight"
         android:layout_alignParentRight="true"
